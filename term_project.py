@@ -7,12 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1Kzyzc-JFMMIROc5yq0PheI0Mi5_rOji1
 """
 
-from google.colab import files
-uploaded = files.upload()
-
-# Extract the exact name of the file you just uploaded
-# (e.g., if you upload battery05.csv, TARGET_FILE becomes 'battery05.csv')
-TARGET_FILE = list(uploaded.keys())[0]
+# Instead of files.upload(), use:
+import sys
+DATA_PATH = sys.argv[1] if len(sys.argv) > 1 else "data/sample_battery.csv"
 
 import pandas as pd
 
