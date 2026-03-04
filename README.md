@@ -12,6 +12,9 @@ Important: In main.py, update the DATA_PATH variable to match your filename:DATA
    
 ## Execution Steps 
 1: Data Cleaning: Run the script to generate clean_battery_data.csv. This removes gaps in the voltage/current traces.
+
 2: Parameter Identification: The script will run a Genetic Algorithm to find the optimal $R_0, R_1, C_1, R_2, C_2$ values.
+
 3: AEKF Estimation: The Kalman Filter will process the current/voltage data to estimate SOC in real-time.
+
 4: Output: Visualizations will be saved to the results/ folder as .png files
