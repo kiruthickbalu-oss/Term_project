@@ -200,7 +200,18 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# Python ignores
+__pycache__/
+*.pyc
 
+# Data & Outputs (don't upload huge NASA files)
+data/*.csv
+!data/sample_battery.csv
+outputs/*.png
+
+# Environment
+.venv/
+.env
 # Marimo
 marimo/_static/
 marimo/_lsp/
