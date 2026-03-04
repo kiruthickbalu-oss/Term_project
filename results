@@ -1,8 +1,0 @@
-# 1. Stage the entire folder and its contents
-git add results/
-
-# 2. Commit the changes with a descriptive message
-git commit -m "Organize output plots into results folder"
-
-# 3. Push to your GitHub repository
-git push origin main
